@@ -1,0 +1,325 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+.catagory {
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    height: 4%;
+    position: relative;
+}
+
+.opt {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.336);
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: start;
+    
+}
+.catagory a {
+   align-items: center;
+   bottom: 0;
+ 
+}
+.container1 {
+   display: flex;
+    width: 100%;
+     margin: 0;
+     flex-wrap: wrap;
+    
+}
+
+
+.box { 
+   display: flex;
+    width:17%;
+    margin: 10px;
+    align-self: center;
+    justify-content: center;
+ 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+      align-items: center; 
+      justify-content:center; 
+      width: 650px;  
+       height: 350px; 
+       border-radius: 16px;
+}
+
+.item a {
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    margin: 5px;
+    
+}
+
+.item .pic{
+    border-radius: 20px;
+} 
+
+.cartbtn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    
+}
+.cartbtn:hover {
+ background-color: rgba(0, 0, 0, 0.445);
+}
+
+#info {
+    margin-top: 20px
+}
+
+
+
+.box2 {
+    display: flex;
+}
+
+.all {
+    display: flex;
+    width: 100%;
+     margin: 0;
+     flex-wrap: wrap;
+}
+
+.electronics,.food,.admin,.createStaff,.deleteStaff,.inv,.vorders {
+    display: none;
+    width: 100%;
+     margin: 0;
+     flex-wrap: wrap;
+}
+
+#i {
+    margin: 0 10px;
+    height: 90%;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.788);
+}
+
+.hide {
+    display: none; 
+}
+
+#counter {
+   position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    background-color: white;
+    right: 110px;
+    top: 20px
+}
+
+.admin {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+   
+}
+.admin p {
+    font-size: 30px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin: 20px 0 ;
+}
+#ad {
+    display: flex;
+    font-size: 15px;
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.411);
+}
+#ada {
+    display: flex;
+    font-size: 20px;
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.createStaff form,.deleteStaff form{
+margin: 5px 0 ;
+width: 200px;
+
+}
+
+.createStaff ,.deleteStaff, .AddNewItem{
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.411);
+}
+.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.viewOrders, .AddNewItem {
+    display: none;
+}
+.bimg {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: start;
+}
+
+.box-img {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+}
+
+.pic-img{
+    display: flex;
+    position: absolute;
+    left: 50px;
+    border-left: 5px solid gray ;
+}
+
+.item-img {
+   padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+#sbtn,#sbtn2 {
+  width: 50px;
+  height: 35px;
+    background-color: pink;
+}
+
+.middle input[type="text"] {
+height: 27px;
+width: 500px;
+border-radius: 5px;
+}
+
+i {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+/* Mobile */
+@media (max-width: 400px) {
+    html {
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .body {
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .all {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    .food {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    .electronics {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    #counter {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+  }
+/* Tablet */
+  @media (max-width: 768px) {
+    html {
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .body {
+      width: auto;
+      margin: auto;
+      padding: auto;
+      flex-wrap: wrap;
+    }
+    .all {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    .food {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    .electronics {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+    #counter {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        flex-wrap: wrap;
+    }
+  }
+
+  .AddNewItem{ 
+    padding: 50px 50px ;
+    margin: -500px 50px;
+  }
